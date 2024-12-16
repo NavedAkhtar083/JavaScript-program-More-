@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+body{
+    background:blue;
+}
+.container{
+    width: 300px;
+    margin: 160px auto 0px;
+}
+.select-option{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 18px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+.select-option i{
+    font-size: 25px;
+    transition: transform 0.3 linear;
+}
+.container.active .select-option i{
+    transition: rotate(-180deg);
+}
+
+.list-serch-container{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    display: none;
+}
+
+.container.active .list-serch-container{
+    display: block;
+}
+
+.serach-box{
+    position: relative;
+}
+.serach-box i{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.serach-box input{
+    height: 50px;
+    width:100%;
+    outline: none;
+    font-size: 20px;
+    padding-left: 55px;
+    border-radius: 10px;
+    border: 1px solid #d3cbcb;
+}
+.serach-box input:focus{
+    border: 2px solid #44aabc;
+}
+.list{
+    margin-top: 20px;
+    padding-right: 7px;
+    overflow: auto;
+    max-height: 250px;
+
+}
+.list li{
+    font-size: 17px;
+    height: 40px;
+    padding: 10px 15px;
+}
+.list li:hover , li.seleted{
+    border-radius: 5px;
+    background: #f2f2f2;
+}
